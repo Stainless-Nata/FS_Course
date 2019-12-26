@@ -6,8 +6,9 @@ const authRoutes = require('./routes/authRoutes');
 const keys = require('./config/keys');
 require('./models/User');
 require('./services/passport');
+const dev = require('../config/dev')
 
-mongoose.connect(keys.mongoURI);
+mongoose.connect(dev.mongoURI);
 
 const app = express();
 
@@ -15,7 +16,7 @@ app.use(
     cookieSession({
 //30 days in miliseconds = 30d * 24h * 60min * 60sec * 1000milisec = maxAge
         maxAge: 2592000000, 
-        keys: [keys.cookieKey]
+        keys: [dev.cookieKey]
     })
 );
 
