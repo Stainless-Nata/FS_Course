@@ -22,7 +22,7 @@ passport.use(
     new GoogleStrategy({
         clientID: keys.googleClientID,
         clientSecret: keys.googleClientSecret,
-        callbackURL: 'https://warm-savannah-03134.herokuapp.com/auth/google/callback',
+        callbackURL: '/auth/google/callback',
         proxy: true
     },
         (accessToken, refreshToken, profile, done) => {
