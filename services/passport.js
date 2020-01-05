@@ -43,16 +43,16 @@ passport.use(
 );
 
 //FaceBook Auth
-passport.use(
-    new facebookStrategy({
-        clientID: keys.faceBookClientID,
-        clientSecret: keys.faceBookClientSecret,
-        callbackURL: '/auth/facebook/callback'
-    },
-        (accessToken, refreshToken, profile, done) => {
-            console.log('access token: ', accessToken);
-            console.log('refresh token: ', refreshToken);
-            console.log('profile: ', profile);
-        }
-    )
-);
+// passport.use(
+//     new facebookStrategy({
+//         clientID: keys.faceBookClientID,
+//         clientSecret: keys.faceBookClientSecret,
+//         callbackURL: '/auth/facebook/callback'
+//     },
+//         (accessToken, refreshToken, profile, done) => {
+//             console.log('access token: ', accessToken);
+//             console.log('refresh token: ', refreshToken);
+//             console.log('profile: ', profile);
+//         }
+//     )
+// );
