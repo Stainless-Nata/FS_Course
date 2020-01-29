@@ -1,4 +1,8 @@
 node_modules
+<<<<<<< HEAD
 dev.js
 .env.production
 .env
+=======
+dev.js
+>>>>>>> 877cc49506ec737f85115dd80879d29fce4f8683
